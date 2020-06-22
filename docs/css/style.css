@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo img {
+    width: 90px;
+}
+
+.nav {
+    display: none;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav__list__item {
+   margin: 1rem;
+}
+
+.nav__list__item a {
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger-menu__input {
+    display: none;
+}
+
+.hamburger-menu__label {
+    background-image: url(../img/icono-hamburgesa.svg);
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+.welcome-section {
+    background-image: url("../img/presentacion.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .hamburger-menu__container {
+        display: none;
+    }
+
+    .nav {
+        display: inline-block;
+    }
+
+}

@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+button {
+    border: 2px solid black;
+    font-size: 1rem;
+    padding: 0.5em 0.8em;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #18d8e6;
+}
+
+.header {
+    background-color: #6bebf3;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo img {
+    height: 100px;
+}
+
+.nav {
+    height: 100%;
+    width: 100%;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nav__list__item {
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: 100%;
+}
+
+.nav__list__item > a {
+    padding: 1rem 0;
+}
+
+.nav__list__item:hover {
+    background-color: #18d8e6;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: #18d8e6;
+    list-style: none;
+    padding: 1rem;
+    text-align: start;
+    opacity: 0;
+    left: 0;
+    top: 100px;
+    display: none;
+}
+
+.sub-menu a {
+    text-decoration: none;
+    padding: 0 1rem;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__list__item:hover .sub-menu {
+    width: 100%;
+    opacity: 1;
+}
+
+.nav__list__item > a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.welcome-section {
+    background-image: url("../img/presentacion.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome-section h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #6bebf3;
+    padding: 0.3em;
+    margin: 0;
+    width: fit-content;
+}
+
+.welcome-section p {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 0.5em;
+    margin: 0;
+    width: fit-content;
+}
+
+.reservations-section {
+    height: 50vh;
+    padding: 2rem;
+    background-color: #6bebf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reservations-section p {
+    margin-bottom: 2rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.menu-section {
+    padding: 2rem;
+}
+
+.menu-section h2 {
+    text-align: center;
+}
+
+.menu-section__card {
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.menu-section__card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-section__card:hover .card__overlay {
+    opacity: 1;
+}
+
+.menu-section__card h3 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.menu-section__card button {
+    opacity: 1;
+}
+
+.contact-section {
+    padding: 2rem;
+    background-color: #6bebf3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section__info {
+    margin-bottom: 2rem;
+}
+
+.contact-section__form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-section__form input {
+    display: block;
+    margin-bottom: 1.5rem;
+    border: 2px solid black;
+    font-size: 1rem;
+    padding: 0.5em 0.8em;
+}
+
+.contact-section__form .form__btn {
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-section__form .form__btn:hover {
+    background-color: #18d8e6;
+}
+
+.footer {
+    background-color: white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__social-media {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer__social-media > a {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.footer__social-media img {
+    width: 35px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+   
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        padding: 0 1rem;
+        height: 100px;
+    }
+
+    .nav {
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .nav__list__item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__list__item > a {
+        padding: 0 1rem;
+    }
+
+    .sub-menu {
+        display: flex;
+    }
+
+    .menu-section .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-section__card {
+        width: calc(33.333% - 1rem);
+        margin-right: 1rem;
+    }
+
+}

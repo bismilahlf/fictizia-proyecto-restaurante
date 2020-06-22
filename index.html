@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>mixto</title>
+    <meta charset="UTF-8">
+    <meta name="intro" content="restaurante">
+    <meta name="keywords" content="restaurante, cenas, brunch, meriendas">
+    <meta name="author" content="Bismilah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta>
+    <meta name="robots" content="index,follow">
+    <link rel="icon" href="/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!------------------------------ BODY ---------------------------------->
+
+<body>
+    <header class="header">
+        <a href="#welcome" class="header__logo" title="Haz click para ir a la página de inicio">
+            <img class="" src="img/logo.png" alt="logo mixto">
+        </a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list__item">
+                    <a href="#welcome" class="nav__list__link" title="Haz click para ir a la sección inicio">Inicio</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#reservations" class="nav__list__link" title="Haz click para ir a la sección reservas">Reservas</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#menu" class="nav__list__link" title="Haz click para ir al menú">Menú</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="">Desayunos</a>
+                        </li>
+                        <li>
+                            <a href="">Sandwiches</a>
+                        </li>
+                        <li>
+                            <a href="">Ensaladas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#contact" class="nav__list__link" title="Haz click para ir a la sección contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+<!-------------------------------------- WELCOME --------------------------------------->
+
+        <section id="welcome" class="welcome-section" aria-labelledby="welcomeTitle">
+            <h1 class="welcome-section__title" id="welcomeTitle">mixto café</h1>
+            <p class="welcome-section__text">desayunos · sandwiches · ensaladas</p>
+        </section>
+
+<!-------------------------------------- RESERVATIONS  --------------------------------------->
+
+        <section id="reservations" class="reservations-section" aria-labelledby="reservationsTitle">
+            <h2 id="reservationsTitle">Reservas</h2>
+            <p>Llama al teléfono 666666666 o haz tu reserva online:</p>
+            <button>Reservar</button>
+        </section>
+        
+<!-------------------------------------- MENU  --------------------------------------->
+
+        <section id="menu" class="menu-section" aria-labelledby="menuTitle">
+            <h2 id="menuTitle">Menú</h2>
+            
+            <div class="container">
+                <article class="menu-section__card" aria-labelledby="breakfastTitle">
+                    <picture class="menu-section__img">
+                        <source media="(min-width: 768px)" srcset="img/breakfast.jpg">
+                        <source media="" srcset="img/breakfast-small.jpg">
+                        <img src="img/breakfast.jpg" alt="desayunos">
+                    </picture>
+                    <div class="card__overlay">
+                        <h3 id="breakfastTitle">Desayunos</h3>
+                        <button>Ver menú</button>
+                    </div>
+                </article>
+    
+                <article class="menu-section__card" aria-labelledby="sandwichesTitle">
+                    <picture class="menu-section__img">
+                        <source media="(min-width: 768px)" srcset="img/sandwich-small.jpg">
+                        <source media="" srcset="img/sandwich.jpg">
+                        <img src="img/sandwich.jpg" alt="sandwiches">
+                    </picture>
+                    <div class="card__overlay">
+                        <h3 id="sandwichesTitle">Sandwiches</h3>
+                        <button>Ver menú</button>
+                    </div>
+                </article>
+    
+                <article class="menu-section__card" aria-labelledby="saladsTitle">
+                    <picture class="menu-section__img">
+                        <source media="(min-width: 768px)" srcset="img/salad.jpg">
+                        <source media="" srcset="img/salad-small.jpg">
+                        <img src="img/salad.jpg" alt="ensaladas">
+                    </picture>
+                    <div class="card__overlay">
+                        <h3 id="saladsTitle">Ensaladas</h3>
+                        <button>Ver menú</button>
+                    </div>
+                </article>
+            </div>
+            
+        </section>
+
+<!----------------------------------------- CONTACT ---------------------------------------------->
+        
+        <section class="contact-section" id="contact" aria-labelledby="contactTitle">
+            <h2 id="contactTitle">Contacto</h2>
+            <address class="contact-section__info">
+                <p>Teléfono: 666666666</p>
+                <a href="mailto:mixtocafe@example.com" title="email">mixtocafe@example.com</a>
+            </address>
+            <form class="contact-section__form">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" required>
+                <label for="email">Email</label>
+                <input type="text" id="email" required>
+                <label for="name">Mensaje</label>
+                <input type="text" id="name" required>
+
+                <input type="submit" value="Submit" class="form__btn">
+            </form>
+        </section>
+    </main>
+
+<!----------------------------------------- FOOTER ---------------------------------------------->
+
+    <footer class="footer">
+        <div class="footer__social-media">
+            <a href="https://twitter.com/" title="Twitter">
+                <img src="https://img.icons8.com/ios/100/000000/twitter.png"/>
+            </a>
+            <a href="https://www.instagram.com/" title="Instagram">
+                <img src="https://img.icons8.com/ios/100/000000/instagram-new.png"/>
+            </a>
+            <a href="https://facebook.com/" title="Facebook">
+                <img src="https://img.icons8.com/ios/100/000000/facebook-circled.png"/>
+            </a>
+        </div>
+        <p class="footer__copywrite">&copy Mixto Café</p>
+    </footer>
+</body>
+</html>

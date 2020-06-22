@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>mixto</title>
+    <meta charset="UTF-8">
+    <meta name="intro" content="restaurante">
+    <meta name="keywords" content="restaurante, cenas, brunch, meriendas">
+    <meta name="author" content="Bismilah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta>
+    <meta name="robots" content="index,follow">
+    <link rel="icon" href="/img/salad.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!------------------------------ BODY ---------------------------------->
+
+<body>
+    <header class="header">
+        <a href="#welcome" class="header__logo">
+            <img class="" src="/img/salad.svg" alt="logo mixto">
+        </a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list__item">
+                    <a href="#welcome" class="nav__list__link">Inicio</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#brunchMenu" class="nav__list__link">Menú Brunch</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#afternoonMenus" class="nav__list__link">Menú Meriendas</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#cenas" class="nav__list__link">Cenas</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#address" class="nav__list__link">Dirección</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="#contact" class="nav__list__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-------------------------HAMBURGER MENU ------------------------->
+
+        <div class="hamburger-menu__container">
+            <input class="hamburger-menu__input" type="checkbox" id="hamburgerMenu">
+            <label class="hamburger-menu__label" for="hamburgerMenu" aria-label="Open menu"></label>
+        </div>
+    </header>
+
+    <main>
+        <section id="welcome" class="welcome-section">
+            <div class="welcome-section__overlay">
+                <h2 class="welcome-section__title">mixto Café</h2>
+                <p class="welcome-section__text">Cafetería, brunch, meriendas</p>
+            </div>
+        </section>
+        
+        <section id="brunchMenu" class="brunch-section">
+            <div class="">
+                <h2>Menú Brunch</h2>
+                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, sint exercitationem dolor odit porro suscipit autem, incidunt blanditiis, vel ipsam aliquam natus nostrum id! Est corrupti suscipit ratione veritatis nobis.</p>
+            </div>
+            
+            <ul class="section-menu brunch-menu">
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </section>
+        <section id="afternoonMenu">
+            <div class="section-intro afternoon-intro">
+                <h2>Menú Meriendas</h2>
+                <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, sint exercitationem dolor odit porro suscipit autem, incidunt blanditiis, vel ipsam aliquam natus nostrum id! Est corrupti suscipit ratione veritatis nobis.</p>
+            </div>
+            <ul class="section-menu afternoon-menu">
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </section>
+        
+        <section id="dinnerMenu">
+            <div class="section-intro dinner-intro">
+                <h2>Cenas</h2>
+                <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, sint exercitationem dolor odit porro suscipit autem, incidunt blanditiis, vel ipsam aliquam natus nostrum id! Est corrupti suscipit ratione veritatis nobis.</p>
+            </div>
+            
+            <ul class="section-menu dinner-menu">
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+        </section>
+        
+        <section id="address">
+            <h2>Dirección</h2>
+            <address>
+                Calle Mayor 3, 28012 Madrid
+            </address>
+        </section>
+        
+        <section id="contact">
+            <h2>Contacto</h2>
+            <address>
+                <p>Email: </p>
+                <a href="mailto:therestaurant@example.com">The Restaurant</a>
+            </address>
+            <a href="https://twitter.com/" title="Twitter">Twitter</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://facebook.com/">Facebook</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy The Restaurant</p>
+        
+    </footer>
+</body>
+</html>
